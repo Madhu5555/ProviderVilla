@@ -47,7 +47,7 @@ pipeline {
 
                                                                                                 withSonarQubeEnv(installationName: 'SonarCube'){
 
-                                                                                                bat label: '', script: 'mvn sonar:sonar'
+                                                                                                powershell label: '', script: 'mvn sonar:sonar'
 
                          }
 
