@@ -25,8 +25,11 @@ pipeline {
                                                 }
 
                                                 steps {
+                                                  dir('PV_Automation/') {
+                                                   powershell 'mvn clean package'
+                                                      }
 
-                                                                powershell 'mvn clean package'
+                                                               
 
                                                                
 
